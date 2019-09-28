@@ -11,6 +11,13 @@
   right: 40px;
   z-index: 5;
 
+  .empty-message {
+    font-size: 18px;
+    margin: 50px auto;
+    text-align: center;
+    display: block;
+  }
+
   .cart-items {
     height: 100%;
     max-height: 240px;
