@@ -12,9 +12,8 @@
   z-index: 5;
 
   .cart-items {
-    height: 298px;
-    display: flex;
-    flex-direction: column;
+    height: 100%;
+    max-height: 240px;
     overflow: hidden;
     overflow-y: auto;
   }
