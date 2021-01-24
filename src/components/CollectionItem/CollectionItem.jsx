@@ -7,7 +7,7 @@ import { addItem } from "../../store/reducers/cart/cart.actions";
 import "./CollectionItem.styles.scss";
 
 const CollectionItem = ({ item, addItem }) => {
-  const { id, name, price, imageUrl } = item;
+  const { name, price, imageUrl } = item;
 
   return (
     <div className="collection-item">
@@ -27,11 +27,8 @@ const CollectionItem = ({ item, addItem }) => {
   );
 };
 
-const mapDispatchToProps = dispatch => ({
-  addItem: item => dispatch(addItem(item))
+const mapDispatchToProps = (dispatch) => ({
+  addItem: (item) => dispatch(addItem(item)),
 });
 
-export default connect(
-  null,
-  mapDispatchToProps
-)(CollectionItem);
+export default connect(null, mapDispatchToProps)(CollectionItem);

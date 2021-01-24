@@ -1,11 +1,11 @@
 import React from "react";
 
-import "./AuthPage.styles.scss";
+import "./auth.styles.scss";
 
 import SignIn from "../../components/SignIn/SignIn";
 import SignUp from "../../components/SignUp/SignUp";
 
-const AuthPage = () => {
+const Auth = () => {
   return (
     <div className="sign-in-and-sign-up">
       <SignIn />
@@ -14,4 +14,4 @@ const AuthPage = () => {
   );
 };
 
-export default AuthPage;
+export default Auth;
