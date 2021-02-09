@@ -6,6 +6,7 @@ import { createStructuredSelector } from "reselect";
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 import { setCurrentUser } from "./store/reducers/user/user.actions";
 import { selectCurrentUser } from "./store/reducers/user/user.selectors";
+
 import "./App.css";
 
 import Header from "./components/Header/Header";

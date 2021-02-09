@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 
 import CollectionItem from "../../components/CollectionItem/CollectionItem";
 
-import { selectCollection } from "../../store/reducers/shop/shop.selector";
+import { selectCollection } from "../../store/reducers/shop/shop.selectors";
 
 import "./collection.styles.scss";
 
