@@ -4,10 +4,10 @@ import { Route } from "react-router-dom";
 import CollectionsOverviewContainer from "../../components/CollectionsOverview/CollectionsOverview.container";
 import CollectionContainer from "../collection/collection.container";
 
-export const Shop = ({ match, fetchCollectionsStart }) => {
+const Shop = ({ match, fetchCollectionsStart }) => {
   useEffect(() => {
     fetchCollectionsStart();
-  }, []);
+  }, [fetchCollectionsStart]);
 
   return (
     <div className="shop-page">
