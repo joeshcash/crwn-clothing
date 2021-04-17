@@ -1,5 +1,3 @@
-import { defaultMemoize } from "reselect";
-
 export const userActionTypes = {
   GOOGLE_SIGN_IN_START: "GOOGLE_SIGN_IN_START",
   EMAIL_SIGN_IN_START: "EMAIL_SIGN_IN_START",

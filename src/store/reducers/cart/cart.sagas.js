@@ -1,7 +1,5 @@
 import { all, call, takeLatest, put } from "redux-saga/effects";
 
-import cartActionTypes from "./cart.types";
-
 import { clearCart } from "./cart.actions";
 import userActionTypes from "../user/user.types";
 

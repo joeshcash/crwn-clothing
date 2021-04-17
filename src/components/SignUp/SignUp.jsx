@@ -6,7 +6,7 @@ import CustomButton from "../CustomButton/CustomButton";
 
 import { signUpStart } from "../../store/reducers/user/user.actions";
 
-import "./SignUp.styles.scss";
+import { SignUpContainer, SignUpTitle } from "./SignUp.styles";
 
 const SignUp = ({ signUpStart }) => {
   const [userCredentials, setUserCredentials] = useState({
@@ -34,10 +34,10 @@ const SignUp = ({ signUpStart }) => {
   };
 
   return (
-    <div className="sign-up">
-      <h2 className="title">I do not have a account</h2>
-      <span>Sign Up with your email and password</span>
-      <form onSubmit={handleSubmit} className="sign-up-form">
+    <SignUpContainer>
+      <SignUpTitle>I do not have a account</SignUpTitle>
+      <span>Sign up with your email and password</span>
+      <form className="sign-up-form" onSubmit={handleSubmit}>
         <FormInput
           type="text"
           name="displayName"
@@ -67,12 +67,12 @@ const SignUp = ({ signUpStart }) => {
           name="confirmPassword"
           value={confirmPassword}
           onChange={handleChange}
-          label="Confirm password"
+          label="Confirm Password"
           required
         />
         <CustomButton type="submit">SIGN UP</CustomButton>
       </form>
-    </div>
+    </SignUpContainer>
   );
 };
 
